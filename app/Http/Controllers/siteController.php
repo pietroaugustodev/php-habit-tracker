@@ -16,4 +16,8 @@ class siteController extends Controller
                 data: ['nome' => $nome, 'habitos' => $habitos]
         );
     }
+
+    public function dashboard(){
+        return view('dashboard');
+    }
 }
