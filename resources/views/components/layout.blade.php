@@ -8,7 +8,9 @@
 </head>
 <body>
     <x-header />
+    <div class={{$attributes->get('class')}}>
         {{ $slot }}
+    </div>
     <x-footer />
 </body>
 </html>
