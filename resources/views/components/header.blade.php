@@ -28,7 +28,7 @@
              <button
             class="border-2 border-black bg-orange-500 h-10 w-40 rounded-sm text-white shadow"
             >
-            Cadastrar
+            Login
             </button>
         </form>
     @endguest

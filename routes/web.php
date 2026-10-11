@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::get('/home', [siteController::class, 'index']);
 Route::get('/login', [login::class, 'index'])->name('auth.login');
-Route::post('/login', [login::class, 'logar'])->middleware(['per',]);
+Route::post('/login', [login::class, 'logar']);
 Route::get('/register', [register::class, 'index'])->name('site.register');
 Route::post('/register', [register::class, 'register'])->name('auth.register');
 
