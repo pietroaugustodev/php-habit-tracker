@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Database\Factories\habitLogsFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,6 +22,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Pietro',
             'email' => 'pietro@gmail.com',
             'password' => '1234',
+        ]);
+
+        $this->call([
+            habitSeeder::class,
+            habitLogsSeeder::class
         ]);
     }
 }
